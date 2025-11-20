@@ -26,7 +26,7 @@ function Register() {
     setError('');
 
     try {
-      const response = await axios.post('http://18.119.113.198:5000/api/auth/register', formData);
+      const response = await axios.post('https://forty-quick-effort-capabilities.trycloudflare.com/api/auth/register', formData);
       
       if (response.data.success) {
         alert('✅ ' + response.data.message);
