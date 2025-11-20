@@ -25,7 +25,7 @@ function Login() {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const response = await axios.post('http://18.119.113.198:5000/api/auth/login', formData);
       
       if (response.data.success) {
         // Guardar datos del usuario en localStorage
